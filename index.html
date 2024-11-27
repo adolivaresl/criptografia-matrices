@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía y Matrices</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Portada -->
+        <section class="container-fluid slide">
+            <div class="row">
+                <div class="col col-4 b-top"><img src="./assets/inacap.svg" class="logo-md"></div>
+            </div>
+            <div class="row" style="padding: 50px 0px">
+                <div class="col-sm-6 offset-sm-4">
+                    <h1><strong>_</strong>Criptografía y Matemáticas:</h1>
+                    <h2>La evolución y <stong style="color:#ffb000">aplicación de matrices</stong> en la seguridad de la información</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 offset-md-7 offset-sm-6">
+                    <ul class="b-top f-strong" style="padding-bottom:16px">
+                        <li>América Olivares Lemunao</li>
+                        <li>Daniela Olivares Lemunao</li>
+                        <li>Patricio Vega González</li>
+                    </ul>
+                    <ul class="f-strong">
+                        <li>Carlos Bastias Dávila</li>
+                        <li>Funciones y matrices</li>
+                        <li>V-IEI-N2-P3-C1 | Ingeniería en Informática</li>
+                    </ul>          
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-4 offset-md-6">
+                <button class="btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>  
+        </section>
+        <!-- Descripción-contexto-problematica -->
+        <section class="slide container-fluid y-back">
+            <div class="row">
+                <div class="col-3 head-title b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <span>Descripción</span>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 25vh;">
+                <div class="col-sm-8 offset-sm-2 text-context">
+                    <h3>Problemática</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, <span>purus arcu luctus </span>libero, in posuere dolor magna ullamcorper eros. Quisque a magna vitae dolor lacinia volutpat. Donec iaculis feugiat quam, nec gravida ex bibendum id. Quisque ligula dui, pretium eu elementum eget, volutpat sed enim.</p>
+                    <p>Quisque imperdiet, neque sit amet faucibus mollis, risus nunc scelerisque ligula, <span>et fermentum ligula erat volutpat sem.</span> Praesent nec massa sodales, dignissim augue id, imperdiet ligula. Pellentesque tincidunt cursus sapien eget ultrices. Donec a quam id diam placerat aliquet. Maecenas pretium arcu ut metus condimentum efficitur ut sit amet arcu. Nunc at odio arcu. Mauris ut lorem dictum mauris sodales commodo vel nec dolor.</p>
+                </div>
+            </div>
+            <div class="row" style="padding-top:50px;">
+                <div class="col-3 offset-sm-3">
+                <button class="btn btn-sm btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn btn-sm btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Descripción objetivos -->
+        <section class="slide container-fluid b-back">
+            <div class="row">
+                <div class="col-3 head-title y-top">
+                    <img src="./assets/y-icon.svg"/>
+                    <span>Descripción</span>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 25vh;">
+                <div class="col-8 offset-sm-3">
+                    <div class="object">
+                        <p><span>Objetivo General:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
+                    </div>
+                    <div class="question-one">
+                        <p><span>Pregunta 1:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
+                    </div>
+                    <div class="question-two">
+                        <p><span>Pregunta 2:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:50px;">
+                <div class="col-3 offset-sm-3">
+                <button class="btn btn-sm btn-outline-secondary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn btn-sm btn-outline-secondary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- linea de tiempo -->
+        <section class="slide container-fluid w-back">
+            <div class="row">
+                <div class="col-7 head-title y-top">
+                    <img src="./assets/y-icon.svg"/>
+                    <span>Historia Matemática y Evolución de la Criptografía</span>
+                </div>
+            </div>
+            <div class="timeline timeline-container">
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Introducción de la aritmética modular
+                        </h5>
+                        <p class="timeline-date">300 a.C</p>
+                        <p class="timeline-description"><strong>Matemático:</strong> Euclides, con su trabajo en divisibilidad y algoritmos.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> La aritmética modular es la base de muchos sistemas modernos de cifrado, como RSA.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Análisis de frecuencias</h5>
+                        <p class="timeline-date">820 d.C
+                        </p>
+                        <p class="timeline-description"><strong>Matemático:</strong>  Al-Kindi, su obra "Manuscrito sobre descifrar mensajes cifrados"</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Análisis estadístico como una forma de descifrar códigos basados en sustituciones.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Invención del cifrado polialfabético</h5>
+                        <p class="timeline-date">1467</p>
+                        <p class="timeline-description"><strong>Matemático:</strong>Leon Battista Alberti.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong>  Alberti diseñó un disco de cifrado que alternaba entre diferentes alfabetos.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Permutaciones en teoría combinatoria</h5>
+                        <p class="timeline-date">1514</p>
+                        <p class="timeline-description"><strong>Matemático:</strong>  Niccolò Fontana (Tartaglia).</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> La teoría combinatoria fue esencial para los sistemas de cifrado. 
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Desarrollo formal de la probabilidad.</h5>
+                        <p class="timeline-date">1654</p>
+                        <p class="timeline-description"><strong>Matemático:</strong>  Blaise Pascal y Pierre de Fermat.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> La probabilidad sentó las bases para cuantificar la fuerza de los cifrados y predecir la probabilidad de que un atacante pueda adivinar claves o romper. </p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Publicación de la Teoría de los números.</h5>
+                        <p class="timeline-date">1801</p>
+                        <p class="timeline-description"><strong>Matemático:</strong> Carl Friedrich Gauss.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Formalizó la aritmética modular , fundamento clave para algoritmos como RSA y curvas elípticas.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Conceptualización de la teoría de la información</h5>
+                        <p class="timeline-date">1940</p>
+                        <p class="timeline-description"><strong>Matemático:</strong> Claude Shannon.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Estableció lprincipios de la criptografía moderna. Incluyendoentropía y métodos para medir la seguridad de los cifrados.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Creación del algoritmo RSA.</h5>
+                        <p class="timeline-date">1977</p>
+                        <p class="timeline-description"><strong>Matemáticos:</strong> Ronald Rivest, Adi Shamir, Leonard Adleman.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> RSA utiliza la dificultad de factorizar grandes números primos.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Criptografía basada en curvas elípticas (ECC)</h5>
+                        <p class="timeline-date">1985</p>
+                        <p class="timeline-description"><strong>Matemático:</strong> Neal Koblitz y Victor Miller.</p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Las curvas elípticas usan geometría algebraica para  clave pública. Permitió mayor seguridad con claves más pequeñas</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Avance en criptografía homomórfica</h5>
+                        <p class="timeline-date">2000s</p>
+                        <p class="timeline-description"><strong>Matemático:</strong> Craig Gentry (2009).
+                        </p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Permite cálculos sobre datos cifrados sin necesidad de descifrarlos.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h5 class="timeline-title">Desarrollo de criptografía post-cuántica.</h5>
+                        <p class="timeline-date">2010s
+                        </p>
+                        <p class="timeline-description"><strong>Matemáticos:</strong> Varios, incluyendo Peter Shor
+                        </p>
+                        <p class="timeline-description"><strong>Impacto en criptografía:</strong> Retículas y algoritmos resistentes a computadoras cuánticas para proteger sistemas ante  amenazas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:50px;">
+                <div class="col-3 offset-sm-3">
+                <button class="btn btn-sm btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn btn-sm btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <section class="slide container-fluid y-back">
+            <div class="row">
+                <div class="col-4 head-title b-top">
+                    <img src="./assets/blue-icon.svg"/>
+                    <span>Evaluación de Claves Seguras</span>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 10vh;">
+                <div class="col-md-6 offset-md-5">
+                    <h2><strong>_</strong>¿Qué elementos hacen <strong style="color:#ffffff">más segura</strong> una clave?</h2>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px;">
+                <div class="col-5">
+                    <ul style="display :flex; align-items: center; flex-direction: column;">
+                        <li><h1 style="border: 3px solid #fff ;color: #ffffff; padding: 20px 15px; border-radius: 15px;">Criptoanálisis</h1></li>
+                        <li><img src="./assets/arrow_down_white.svg"/></li>
+                        <li style="text-align: center"><h3 style="color:#ffffff ">Cuantificación de seguridad de un sistema</h3></li>
+                    </ul>
+                </div>
+                <div class="col-7" style="display: flex; flex-direction: row;">
+                    <div class="card">
+                        <img src="./assets/security.svg" class="card-img-top" alt="seguridad">
+                        <div class="card-body">
+                            <h4>1. Modelos de seguridad</h4>
+                          <p class="card-text"><ul>
+                            <li>Seguridad Computacional</li>
+                            <li>Seguridad Teórica</li>
+                            <li>Seguridad Asintónica</li>
+                        </ul></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="./assets/shield.svg" class="card-img-top" alt="medidas de seguridad">
+                        <div class="card-body">
+                            <h4>2. Medidas y Métodos de seguridad</h4>
+                          <p class="card-text"><ul>
+                            <li>Bits de seguridad</li>
+                            <li>Entropía</li>
+                            <li>Resistencia a ataques específicos</li>
+                            <li>Ataques de fuerza bruta</li>
+                            <li>Ataques criptoanalíticos</li>
+                            <li>Resistencia basado en colisiones</li>
+                            <li>Costo de ataque</li>
+                        </ul></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="./assets/bug_report.svg" class="card-img-top" alt="Ataque">
+                        <div class="card-body">
+                            <h4>3. Contexto de Ataque</h4>
+                          <p class="card-text"><ul>
+                            <li>Ataque de texto claro conocido</li>
+                            <li>Ataque de texto claro conocido</li>
+                            <li>Ataque de texto cifrado elegido</li>
+                            <li>Ataque de canal lateral</li>
+                        </ul></p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:50px;">
+                <div class="col-3 offset-sm-3">
+                <button class="btn btn-sm btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn btn-sm btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section> -->
+    </div>
+    <script src="moving_slide.js"></script>
+</body>
+</html>
