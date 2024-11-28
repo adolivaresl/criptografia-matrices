@@ -1,6 +1,8 @@
 :root{
     --primary: #004466;
-    --secondary: #ffb000;
+    --secondary: #8DD1BF;
+    --yellow: #F7FE8E;
+    --highlight-y: #ffb000;
     --white: #ffffff;
     --black: #000000;
     --gris: #AFA8A8;
@@ -26,7 +28,23 @@ ul{
     list-style: none;
     padding-left: 0;
 }
+.button {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif; /* Fuente de Material Design */
+    font-size: 16px;
+    font-weight: 500;   
+    padding: 10px 24px;   
+    border-radius: 50px; /* Termina en óvalos */
+    cursor: pointer;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Animación */
+  }
 
+.btn-outline-primary{
+    border: 1px solid var(--primary);
+    color: white;
+}
 .presentation-container {
     display: flex;
     transition: transform 0.8s ease-in-out;
@@ -58,6 +76,10 @@ ul{
     border-bottom: 5px solid #ffb000;
 }
 
+.g-top{
+    border-bottom: 5px solid var(--secondary);
+}
+
 .f-strong{
     font-weight: 700;
 }
@@ -67,7 +89,7 @@ ul{
     align-items: center;
 }
 
-.y-back{
+.g-back{
     background-color: var(--secondary);
 }
 
@@ -75,7 +97,7 @@ ul{
     background-color: var(--primary);
 }
 
-.y-back span{
+.g-back span{
     color: var(--primary);
     font-family: "DM Serif Text"; 
     font-size: 30px;
@@ -86,7 +108,11 @@ ul{
     font-family: "DM Serif Text"; 
     font-size: 30px;   
 }
-
+.w-back .y-top span{
+    color: var(--highlight-y);
+    font-family: "DM Serif Text"; 
+    font-size: 30px;
+}
 .b-back span{
     color: var(--secondary);
     font-family: "DM Serif Text"; 
@@ -114,6 +140,10 @@ ul{
 .object{
     color: var(--white);
     font-size: 20px;
+}
+
+.object p span, .question-one p span, .question-two p span{
+    color: var(--highlight-y);
 }
 
 .question-one, .question-two{
