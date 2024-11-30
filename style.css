@@ -97,7 +97,7 @@ ul{
     background-color: var(--primary);
 }
 
-.g-back span{
+.g-back span, .w-back .b-top span{
     color: var(--primary);
     font-family: "DM Serif Text"; 
     font-size: 30px;
@@ -113,6 +113,7 @@ ul{
     font-family: "DM Serif Text"; 
     font-size: 30px;
 }
+
 .b-back span{
     color: var(--secondary);
     font-family: "DM Serif Text"; 
@@ -224,6 +225,15 @@ ul{
     color:var(--white);
     --bs-btn-color: var(--white);
     --bs-btn-border-color:var(--white);
+    --bs-btn-hover-color: var(--primary);
+    --bs-btn-hover-bg: var(--secondary);
+    --bs-btn-hover-border-color: var(--secondary);
+}
+
+.btn-outline-tertiary{
+    color:var(--highlight-y);
+    --bs-btn-color: var(--white);
+    --bs-btn-border-color:var(--highlight-y);
     --bs-btn-hover-color: var(--primary);
     --bs-btn-hover-bg: var(--secondary);
     --bs-btn-hover-border-color: var(--secondary);

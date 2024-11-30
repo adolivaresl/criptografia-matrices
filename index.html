@@ -287,12 +287,48 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!-- <section>6</section>
-        <section>7</section>
+        <!-- Ataque fuerza bruta -->
+        <section class="slide container-fluid w-back">
+             <div class="row">
+                <div class="col-5 head-title b-top">
+                    <img src="./assets/i_inacap.svg" alt="icono Inacap"/>
+                    <span>Simulación Ataque Fuerza Bruta</span>
+                </div>
+             </div>
+             <!-- Formulario para el ingreso de la clave -->
+              <div class="row" style="padding-top: 25vh;">
+                <div class="col-3 offset-md-2">
+                    <form class="row g-3" style="display:flex; flex-direction: column;">
+                        <div class="col-auto">
+                          <p>Ingresa la clave a evaluar</p>
+                        </div>
+                        <div class="col-auto">
+                          <label for="inputPassword2" class="visually-hidden">Contraseña</label>
+                          <input type="password" class="form-control" id="userPassword" placeholder="Password">
+                          <p id="errorMessage"></p>
+                        </div>
+                        <div class="col-auto">
+                          <button  id="evaluate-password" type="submit" class="btn button btn-outline-primary mb-3">Evalúa Clave</button>
+                        </div>
+                      </form>
+                </div>
+                <div id="result" class="col-5 offset-md-1">
+                </div>
+              </div>
+            <div class="row" style="padding-top:50px;">
+                <div class="col-3 offset-sm-3">
+                <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- <section>7</section>
         <section>8</section>
         <section>9</section>
         <section>10</section> -->
     </div>
     <script src="moving_slide.js"></script>
+    <script src="bruteForce.js"></script>
+
 </body>
 </html>
