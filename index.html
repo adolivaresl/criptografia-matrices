@@ -15,11 +15,13 @@
     <div class="presentation-container">
         <!-- Portada -->
         <section class="container-fluid slide">
-            <div class="row">
-                <div class="col col-4 b-top"><img src="./assets/inacap.svg" class="logo-md"></div>
+            <div class="row header-section">
+                <div class="col-sm-10 col-md-4 b-top">
+                    <img src="./assets/inacap.svg" alt="Logotipo Inacap">
+                </div>
             </div>
-            <div class="row" style="padding: 50px 0px">
-                <div class="col-sm-6 offset-sm-4">
+                <div class="row" >
+                <div class="col-sm-6 offset-sm-4 col-md-6">
                     <h1><strong>_</strong>Criptografía y Matemáticas:</h1>
                     <h2>La evolución y <stong style="color:#ffb000">aplicación de matrices</stong> en la seguridad de la información</h2>
                 </div>
@@ -38,27 +40,33 @@
                     </ul>          
                 </div>
             </div>  
-            <div class="row">
+            <div class="row buttons-section">
                 <div class="col-4 offset-md-6">
                 <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>  
         </section>
         <!-- Descripción-contexto-problematica -->
-        <section class="slide container-fluid g-back">
-            <div class="row">
-                <div class="col-3 head-title b-top">
+        <section class="container-fluid slide ">
+            <div class="row header-section">
+                <div class="col-3 b-top">
                     <img src="./assets/i_inacap.svg"/>
-                    <span>Descripción</span>
+                    <h2>Descripción</h2>
                 </div>
             </div>
-            <div class="row" style="padding-top: 25vh;">
-                <div class="col-sm-8 offset-sm-2 text-context">
-                    <h3>Problemática</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, <span>purus arcu luctus </span>libero, in posuere dolor magna ullamcorper eros. Quisque a magna vitae dolor lacinia volutpat. Donec iaculis feugiat quam, nec gravida ex bibendum id. Quisque ligula dui, pretium eu elementum eget, volutpat sed enim.</p>
-                    <p>Quisque imperdiet, neque sit amet faucibus mollis, risus nunc scelerisque ligula, <span>et fermentum ligula erat volutpat sem.</span> Praesent nec massa sodales, dignissim augue id, imperdiet ligula. Pellentesque tincidunt cursus sapien eget ultrices. Donec a quam id diam placerat aliquet. Maecenas pretium arcu ut metus condimentum efficitur ut sit amet arcu. Nunc at odio arcu. Mauris ut lorem dictum mauris sodales commodo vel nec dolor.</p>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <h1>_Problemática</h1>
                 </div>
             </div>
-            <div class="row" style="padding-top:50px;">
+            <div class="row with-highlight y">
+                <div class="col-sm-6 offset-md-3">
+                    <p><span>La criptografía</span> ha evolucionado desde métodos rudimentarios como el cifrado por sustitución en la antigua Roma, hasta complejos sistemas matemáticos que protegen la información en la era digital.</p>
+                    <p>Los avances matemáticos, como las <span>transformaciones lineales</span> en el cifrado de Hill y los <span>principios de factorización y claves públicas</span> en RSA, han impulsado la creación de algoritmos robustos y eficientes.</p>
+                    <p>Este trabajo explora <span>el papel crucial de las matemáticas</span>, desde matrices y álgebra lineal hasta teorías de números avanzadas, en la construcción de métodos criptográficos y criptoanálisis.</p>
+                </div>
+                
+            </div>
+            <div class="row buttons-section">
                 <div class="col-3 offset-sm-3">
                 <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
                 <div class="col-3 offset-sm-2">
@@ -66,27 +74,43 @@
             </div>
         </section>
         <!-- Descripción objetivos -->
-        <section class="slide container-fluid b-back">
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-3 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Descripción</h2>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-3 head-title g-top">
-                    <img src="./assets/green_icon.svg"/>
-                    <span>Descripción</span>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 25vh;">
                 <div class="col-8 offset-sm-3">
-                    <div class="object">
-                        <p><span>Objetivo General:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
-                    </div>
-                    <div class="question-one">
-                        <p><span>Pregunta 1:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
-                    </div>
-                    <div class="question-two">
-                        <p><span>Pregunta 2:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum, felis id semper euismod, purus arcu luctus libero, in posuere dolor magna ullamcorper eros.</p>
+                    <div class="object with-highlight y">
+                        <p><span>_Objetivo General:</span> Demostrar cómo las herramientas matemáticas, como las matrices han sido esenciales para desarrollar sistemas criptográficos más seguros y cómo siguen influyendo en la criptografía moderna.</p>
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-top:50px;">
+                <div class="row">
+                    <div class="col-4 offset-sm-3">
+                        <div class="question-one">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                <h5 class="card-title">Pregunta 1:</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">¿Cuál fue la necesidad de utilizar esta matemática? (Ventaja y Desventajas)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="question-two">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                <h5 class="card-title">Pregunta 2:</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">¿Qué elementos hacen más segura una clave?</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row buttons-section">
                 <div class="col-3 offset-sm-3">
                 <button class="btn button btn-outline-secondary" onclick="previousSlide()">Atrás</button></div>
                 <div class="col-3 offset-sm-2">
@@ -94,14 +118,15 @@
             </div>
         </section>
         <!-- linea de tiempo -->
-        <section class="slide container-fluid w-back">
-            <div class="row">
-                <div class="col-8 head-title y-top">
-                    <img src="./assets/y-icon.svg"/>
-                    <span>Historia Matemática y Evolución de la Criptografía</span>
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-10 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Historia Matemática y Evolución de la Criptografía</h2>
                 </div>
             </div>
-            <div class="timeline timeline-container">
+            <div class="row">
+            <div class="timeline timeline-container col-8 offset-md-2">
                 <div class="timeline-block">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -211,7 +236,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-top:50px;">
+        </div>
+            <div class="row buttons-section">
                 <div class="col-3 offset-sm-3">
                 <button class="btn button  btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
                 <div class="col-3 offset-sm-2">
@@ -219,29 +245,29 @@
             </div>
         </section>
         <!-- Evaluacion claves seguras -->
-        <section class="slide container-fluid g-back">
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-6 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Evaluación de Claves Seguras</h2>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-5 head-title b-top">
-                    <img src="./assets/blue-icon.svg"/>
-                    <span>Evaluación de Claves Seguras</span>
+                <div class="col-md-6 offset-md-4 with-highlight y">
+                    <h2><strong>_</strong>¿Qué elementos hacen <span>más segura</span> una clave?</h2>
                 </div>
             </div>
-            <div class="row" style="padding-top: 10vh;">
-                <div class="col-md-6 offset-md-5">
-                    <h2><strong>_</strong>¿Qué elementos hacen <span style="color:#ffffff">más segura</span> una clave?</h2>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 30px;">
-                <div class="col-5">
-                    <ul style="display :flex; align-items: center; flex-direction: column;">
-                        <li><h1 style="border: 3px solid #fff ;color: #ffffff; padding: 20px 15px; border-radius: 15px;">Criptoanálisis</h1></li>
-                        <li><img src="./assets/arrow_down_white.svg"/></li>
-                        <li style="text-align: center"><h3 style="color:#ffffff ">Cuantificación de seguridad de un sistema</h3></li>
+            <div class="row">
+                <div class="col-3">
+                    <ul style="text-align: center">
+                        <li><h1>Criptoanálisis</h1></li>
+                        <li><img src="./assets/arrow_yellow.svg"/></li>
+                        <li><h3>Cuantificación de seguridad de un sistema</h3></li>
                     </ul>
                 </div>
-                <div class="col-7" style="display: flex; flex-direction: row;">
+                <div class="col-7 offset-md-1 info-quantify">
                     <div class="card">
-                        <img src="./assets/security.svg" class="card-img-top" alt="seguridad">
+                        <img src="./assets/security.svg" alt="seguridad">
                         <div class="card-body">
                             <h4>1. Modelos de seguridad</h4>
                           <p class="card-text"><ul>
@@ -267,7 +293,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="./assets/bug_report.svg" class="card-img-top" alt="Ataque">
+                        <img src="./assets/bug.svg" class="card-img-top" alt="Ataque">
                         <div class="card-body">
                             <h4>3. Contexto de Ataque</h4>
                           <p class="card-text"><ul>
@@ -280,7 +306,7 @@
                       </div>
                 </div>
             </div>
-            <div class="row" style="padding-top:50px;">
+            <div class="row buttons-section">
                 <div class="col-3 offset-sm-3">
                 <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
                 <div class="col-3 offset-sm-2">
@@ -288,19 +314,19 @@
             </div>
         </section>
         <!-- Ataque fuerza bruta -->
-        <section class="slide container-fluid w-back">
-             <div class="row">
-                <div class="col-5 head-title b-top">
-                    <img src="./assets/i_inacap.svg" alt="icono Inacap"/>
-                    <span>Simulación Ataque Fuerza Bruta</span>
+        <section class="slide container-fluid">
+             <div class="row header-section">
+                <div class="col-8 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Simulación Ataque Fuerza Bruta</h2>
                 </div>
              </div>
              <!-- Formulario para el ingreso de la clave -->
-              <div class="row" style="padding-top: 25vh;">
+              <div class="row">
                 <div class="col-3 offset-md-2">
-                    <form class="row g-3" style="display:flex; flex-direction: column;">
+                    <form class="row g-3 form-brute-force">
                         <div class="col-auto">
-                          <p>Ingresa la clave a evaluar</p>
+                          <h4>Ingresa la clave a evaluar</h4>
                         </div>
                         <div class="col-auto">
                           <label for="inputPassword2" class="visually-hidden">Contraseña</label>
@@ -315,15 +341,15 @@
                 <div id="result" class="col-5 offset-md-1">
                 </div>
               </div>
-            <div class="row" style="padding-top:50px;">
+            <div class="row buttons-section">
                 <div class="col-3 offset-sm-3">
                 <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
                 <div class="col-3 offset-sm-2">
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!-- <section>7</section>
-        <section>8</section>
+        <section>7</section>
+        <!-- <section>8</section>
         <section>9</section>
         <section>10</section> -->
     </div>

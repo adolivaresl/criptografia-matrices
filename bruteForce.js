@@ -4,7 +4,9 @@ function evaluate(password) {
     // CÁLCULO DE ENTROPÍA
     const N = characters.length;
     const L = password.length;
-    const entropy = Math.log2(Math.pow(N, L)); // Entropía: E = log2(N**L)
+    let possibleCombinations = Math.pow(N,L);
+    const entropy = Math.log2(possibleCombinations); // Entropía: E = log2(N**L)
+    
 
     // Nivel de seguridad basado en entropía
     let securityLevel = '';
@@ -51,8 +53,13 @@ function evaluate(password) {
         if (searchCharacter && i === password.length) {
             containerResult.innerHTML = `
                 <ul class="list-group">
+                    <h4>_Cuantificación de tu clave</h4>
                     <li class="list-group-item"><strong>Entropía de la contraseña:</strong> ${entropy.toFixed(2)} bits</li>
                     <li class="list-group-item"><strong>Nivel de seguridad:</strong> ${securityLevel}</li>
+                    <li class="list-group-item"><strong>Cantidad de combinaciones posibles:</strong> ${possibleCombinations}</li>
+                </ul>
+                <ul class="list-group">
+                    <h4>_Datos obtenidos con nuestro algoritmo</h4>
                     <li class="list-group-item"><strong>Clave encontrada:</strong> ${current}</li>
                     <li class="list-group-item"><strong>Intentos realizados:</strong> ${totalAttempts} intentos para encontrar la clave</li>
                     <li class="list-group-item"><strong>Tiempo que tomó encontrar la contraseña:</strong> ${elapsedTime.toFixed(4)} segundos</li>
@@ -79,7 +86,7 @@ document.getElementById("evaluate-password").addEventListener('click', (e) => {
     const userPassword = document.getElementById("userPassword").value;
 
     if (userPassword.length === 0) {
-        document.getElementById("errorMessage").innerHTML = "No podemos evaluar, ingresa una clave";
+        document.getElementById("errorMessage").innerHTML = `<p class="small-text">No podemos evaluar, ingresa una clave</p>`;
     } else {
         document.getElementById("errorMessage").innerHTML = ""; // Limpiar mensajes de error anteriores
         evaluate(userPassword);
