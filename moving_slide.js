@@ -21,3 +21,13 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') nextSlide();
     if (e.key === 'ArrowLeft') previousSlide();
 });
+
+//Interacción de Explicación dinámica del algoritmo de fuerza bruta
+document.querySelectorAll('.code-line').forEach(line => {
+    line.addEventListener('mouseover', function() {
+        document.querySelectorAll('.explanation').forEach(explanation => {
+            explanation.classList.remove('active');
+        });
+        document.getElementById(this.getAttribute('data-target')).classList.add('active');
+    });
+});

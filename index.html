@@ -348,7 +348,142 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <section>7</section>
+        <!-- Explicación del algoritmo -->
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>¿Cómo funciona?</h2>
+                </div>
+             </div>
+             <!-- Muestra del algoritmo -->
+              <div class="row">
+                <!-- columna de código -->
+                <div class="col-5 offset-md-1 code-section">
+                    <pre>
+                        <code class="code-line" data-target="explanation1">
+                            <span>function evaluate(password)</span> {
+                            <span>const characters =</span> "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:',.<>?/`~";
+                        </code>
+                        <code class="code-line" data-target="explanation2">
+                            <span>const N</span> = characters.length;
+                            <span>const L</span> = password.length;
+                            <span>let possibleCombinations</span> = Math.pow(N,L);
+                            <span>const entropy</span> = Math.log2(possibleCombinations);
+                        </code>
+                        <code class="code-line" data-target="explanation3">
+                            <span>let securityLevel</span> = '';
+                            <span>if (entropy < 40)</span> {
+                                securityLevel = 'Baja Seguridad: contraseña fácilmente descifrable';
+                            } <span>else if (entropy >= 40 && entropy <= 59)</span> {
+                                securityLevel = 'Moderada: aceptada para usos comunes, pero no recomendada para alta seguridad';
+                            }<span> else if (entropy >= 60 && entropy <= 79)</span> {
+                                securityLevel = 'Alta: adecuada para propósitos críticos con riesgos medios';
+                            }<span> else</span> {
+                                securityLevel = 'Muy Alta: considerada robusta, ideal para aplicaciones críticas';
+                            }
+                        </code>
+                        <code class="code-line" data-target="explanation4">
+                            <span>function bruteForce(password)</span> {
+                                <span>const startTime</span> = performance.now();
+                                <span>const containerResult</span> = document.getElementById("result");
+                                <span>let totalAttempts</span> = 0;
+                                <span>let current</span> = "";
+                                <span>let i</span> = 0;
+                                <span>let searchCharacter</span> = true;
+                        </code>
+                        <code class="code-line" data-target="explanation5">
+                           <span>while (i < password.length && searchCharacter)</span> {
+                                <span>searchCharacter</span> = false;
+                                <span>for (let j = 0; j < characters.length; j++)</span> {
+                                    <span>totalAttempts++</span>;
+                                    <span>if (characters[j] = = = password[i])</span> {
+                                        <span>current +</span>= characters[j];
+                                        <span>searchCharacter</span> = true; 
+                                        break;
+                                    }
+                                }
+                                <span>if (searchCharacter)</span> {
+                                    i++; 
+                                }<span> else</span> {
+                                    break; 
+                                }
+                            }
+                        </code>                  
+                        }
+                    </pre>
+                </div>
+                <!-- columna de explicación dinámica -->
+                <div class="col-4 offset-md-1">
+                    <div id="explanation">                   
+                        <div id="explanation1" class="explanation">
+                            <h4>1. Configuración inicial y entrada de datos:</h4>
+                            <ul>
+                                <li>Hemos definido una <span>función llamada Evaluate</span> a la que se le pasa como parámetro <span>password</span> que es la contraseña ingresada por el usuario.</li>
+                                <li>Luego tenemos nuestra variable <span>characters</span> que guarda el conjunto de posibles caracteres que se podría usar en la contraseña, en este caso es un total de 90 carácteres.</li>
+                            </ul>
+                        </div>
+                        <div id="explanation2" class="explanation">
+                            <h4>2. Cálculo de la entropía:</h4>
+                            <ul>
+                                <li><span>La variable N</span> guarda el número <span>total de caracteres posibles</span> que se pueden usar, en este caso evalúa el largo de la variable characters por lo tanto son 90 carácteres.</li>
+                                <li><span>La variable L</span> corresponde a longitud de la contraseñan que ingresó el usuario</li>
+                                <li>En la <span>variable possibleCombinations</span>utilizamos el método <span>Math.pow(N,L)</span> que calcula el número total de combinaciones posibles, en este caso si N=90 y L=4, entonces 90<sup>4</sup> = 65610000 combinaciones
+                                </li>
+                                <li>Luego tenemos definida la <span>variable entropy</span> guarda el valor en bits. Como vemos al método <span>Math.log2(65610000)</span> le pasamos como parámetro el número total de combinaciones que obtuvimos de la variable possibleCombinations, convirtiendo esto en <span>bits de entropía</span> lo que daría 25.96bits</li>
+                                <li>La función <span>log2(x)</span> lo que hace es calcular cuántos bits (símbolos binarios 0 y 1) necesitas para representar todas las combinaciones.
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="explanation3" class="explanation">
+                            <h4>3. Evaluación del nivel de seguridad:</h4>
+                            <ul>
+                                <li>Aquí clasificamos el nivel de seguridad según el resultado de la entropía, tenemos 4 niveles los cuales creamos basándonos en el estándar del NIST SP 800-90B.</li> 
+                                <li>Cuando se cumple una de estas cuatro condiciones entonces  la <span>variable securityLevel</span> que estaba declarado como vacío se rellena con un mensaje para el usuario que explica qué nivel tiene su clave y qué significa esto.</li>
+                            </ul>
+                        </div>
+                        <div id="explanation4" class="explanation">
+                            <h4>4. Simulación de fuerza bruta</h4>
+                            <ul>
+                                <li>La función <span>bruteForce()</span> intenta "adivinar" una contraseña (password) utilizando un enfoque de fuerza bruta. Esto implica probar todas las combinaciones posibles carácter por carácter hasta encontrar la coincidencia exacta.</li>
+                                <li>La variable <span>const startTime</span> registra el tiempo inicial para medir cuánto tarda el algoritmo en encontrar la contraseña usando el método <span>performance.now()</span>. </li>
+                                  <li><span>performance.now()</span> es una función disponible en el contexto del navegador web (JavaScript) y en algunos entornos de ejecución como NodeJS. Esto devuelve un valor de tiempo en milisegundos.
+                                </li>
+                                <li><span>containerResult</span> obtiene el elemento HTML con el id <span>result</span> para mostrar los resultados en la página web al finalizar.</li>
+                                <li><span>totalAttempts</span> contabilizará el total de intentos realizados.</li>
+                                <li>la variable <span>current</span> es quien se encarga de acumular la parte de la contraseña encontrada hasta el momento.</li>
+                                <li>el índice <span>i</span> se utilizará para recorrer la contraseña password.</li>
+                                <li><span>searchCharacter</span> nos indicará si se sigue buscando caracteres en el ciclo principal. Esto nos ayudará a salir del bucle si no se encuentra un carácter.</li>
+                                <li>Inicialmente asumimos que puede encontrar cada caracter por ello la declaramos con valor <span>true</span></li>
+                            </ul>
+                        </div>
+                        <div id="explanation5" class="explanation">
+                            <h4>5. Ciclo principal para adivinar la contraseña:</h4>
+                            <ul>
+                                <li>El bucle principal intenta encontrar cada carácter de la contraseña</li>
+                                <li>El ciclo <span>While</span> Se ejecuta mientras queden caracteres en la contraseña <span>(i < password.length)</span> y sea posible encontrar caracteres (searchCharacter).</li>
+                                <li><span>searchCharacter = false</span> Al inicio de cada iteración, se asume que no se encontrará el carácter, hasta que el ciclo interno lo demuestre.</li>
+                                <li>El ciclo interno <span>for</span> itera sobre characters para encontrar el carácter actual de la contraseña.</li>
+                                <li>la variable <span>totalAttempts++</span> incrementa los intentos de uno en uno.</li>
+                                <li>En la condicional comparamos cada carácter de <span>characters</span> con el carácter actual de <span>password</span>.</li>
+                                <li>Si coincide, agregará el carácter encontrado a <span>current</span></li>
+                                <li>Se activa <span>searchCharacter</span> como true para continuar con el siguiente carácter.</li>
+                                <li>Sale del ciclo interno con <span>break</span> porque ya hemos encontrado el carácter actual.</li>
+                                <li>Como searchCharacter sen encuentra en true, entonces sumamos 1 al valor de  i, significando que pasamos al siguiente caracter. Solo se incrementa si se encontró el carácter actual.</li>
+                                <li>Si no se encuentra un carácter entonces se rompe el bucle principal, ya que no tiene sentido continuar si algún carácter de la contraseña no está presente en characters.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Muestra del algoritmo -->
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
         <!-- <section>8</section>
         <section>9</section>
         <section>10</section> -->
