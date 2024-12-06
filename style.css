@@ -43,6 +43,10 @@ ul{
     padding-left: 0;
     font-size: 0.8rem;
 }
+#seg1, #seg2, #seg3{
+    list-style:disc;
+    padding-left: 20px    
+}
 .presentation-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
