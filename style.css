@@ -13,7 +13,6 @@
 body{
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     overflow-x: hidden;
     font-family: var(--font-text);
     color: var(--primary);
@@ -55,7 +54,6 @@ ul{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* align-items: center;*/
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
@@ -149,8 +147,8 @@ ul{
     --bs-btn-hover-border-color: var(--primary);
 }
 .timeline-container {
-    max-height: 500px; /* Altura máxima del área visible */
-    overflow-y: auto; /* Habilitar scroll vertical */
+    max-height: 500px;
+    overflow-y: auto;
    padding: 15px;
     border-radius: 8px;
     background-color: #ffffff;
@@ -163,7 +161,6 @@ ul{
 /* Timeline Block */
 .timeline-block {
     position: relative;
-    /* margin-bottom: 50px; */
     padding-left: 40px;
     border-left: 2px solid var(--secondary);
 }
@@ -186,7 +183,6 @@ ul{
 /* Timeline Content */
 .timeline-content {
     background-color: #ffffff;
-    /* border: 1px solid #AFA8A8; */
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -242,7 +238,6 @@ ul{
 
 .circle {
     width: 40px;
-    /* height: 40px; */
    display: flex;
     align-items: center;
     justify-content: center;
@@ -264,6 +259,52 @@ ul{
 .timeLine h5{
     color:var(--gris);
     font-size: 20px;
+}
+
+/* Estilos para explicacion de código */
+.code-line {
+    cursor: pointer;
+    font-family: "Fira Code", serif;
+    
+}
+.code-section{
+    max-height: 500px;
+    overflow-y: auto; 
+    border: 1px solid #ccc;
+    padding: 10px;
+
+}
+.code-section pre {
+    white-space: pre-line;
+    word-break: break-all; 
+    margin: 0;
+    padding: 0;
+}
+code:hover {
+    background-color: #f0f0f0;
+    /* color: var(--yellow);
+    background-color: var(--primary); */
+}
+.code-line span, .explanation span{
+    font-weight: 600;
+}
+.explanation {
+    display: none;
+}
+.explanation.active {
+    display: block;
+}
+
+.explanation ul{
+    list-style-type: disc;
+}
+
+.explanation h4{
+    padding-bottom: 15px;
+}
+
+.explanation ul li{
+    padding-bottom: 10px;
 }
 
 /* Responsive Design */
