@@ -5,8 +5,7 @@ function evaluate(password) {
     const N = characters.length;
     const L = password.length;
     let possibleCombinations = Math.pow(N,L);
-    const entropy = Math.log2(possibleCombinations); // Entropía: E = log2(N**L)
-    
+    const entropy = Math.log2(possibleCombinations);
 
     // Nivel de seguridad basado en entropía
     let securityLevel = '';
@@ -22,32 +21,32 @@ function evaluate(password) {
 
     // Simulación de fuerza bruta
     function bruteForce(password) {
-        const startTime = performance.now(); // Inicio de tiempo
+        const startTime = performance.now(); 
         const containerResult = document.getElementById("result");
         let totalAttempts = 0;
         let current = "";
         let i = 0;
-        let searchCharacter = true; // Inicialmente asumimos que puede encontrar cada carácter
+        let searchCharacter = true; 
 
         while (i < password.length && searchCharacter) {
-            searchCharacter = false; // Reiniciar para cada carácter
+            searchCharacter = false;
             for (let j = 0; j < characters.length; j++) {
                 totalAttempts++;
                 if (characters[j] === password[i]) {
                     current += characters[j];
-                    searchCharacter = true; // Caracter encontrado
+                    searchCharacter = true; 
                     break;
                 }
             }
 
             if (searchCharacter) {
-                i++; // Pasar al siguiente carácter
+                i++; 
             } else {
-                break; // Interrumpir si un carácter no se encuentra
+                break;
             }
         }
 
-        const elapsedTime = (performance.now() - startTime) / 1000; // Tiempo total al finalizar
+        const elapsedTime = (performance.now() - startTime) / 1000; 
 
         // Mostrar resultados en HTML
         if (searchCharacter && i === password.length) {
@@ -63,8 +62,7 @@ function evaluate(password) {
                     <li class="list-group-item"><strong>Clave encontrada:</strong> ${current}</li>
                     <li class="list-group-item"><strong>Intentos realizados:</strong> ${totalAttempts} intentos para encontrar la clave</li>
                     <li class="list-group-item"><strong>Tiempo que tomó encontrar la contraseña:</strong> ${elapsedTime.toFixed(4)} segundos</li>
-                </ul>
-            `;
+                </ul>`;
         } else {
             containerResult.innerHTML = `
             <ul class="list-group">
@@ -72,11 +70,9 @@ function evaluate(password) {
                 <li class="list-group-item">El carácter '${password[i]}' no se encontró en la matriz.</li>
                 <li class="list-group-item"><strong>Intentos hasta el momento:</strong> ${totalAttempts}</li>
                 <li class="list-group-item"><strong>Tiempo transcurrido:</strong> ${elapsedTime.toFixed(3)} segundos</li>
-            </ul>
-            `;
+            </ul>`;
         }
     }
-
     bruteForce(password);
 }
 
@@ -84,7 +80,6 @@ function evaluate(password) {
 document.getElementById("evaluate-password").addEventListener('click', (e) => {
     e.preventDefault();
     const userPassword = document.getElementById("userPassword").value;
-
     if (userPassword.length === 0) {
         document.getElementById("errorMessage").innerHTML = `<p class="small-text">No podemos evaluar, ingresa una clave</p>`;
     } else {
