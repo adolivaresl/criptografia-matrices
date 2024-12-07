@@ -271,6 +271,10 @@ ul{
     font-family: "Fira Code", serif;
     
 }
+.code-line h4{
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
 .code-section{
     max-height: 500px;
     overflow-y: auto; 
@@ -299,16 +303,31 @@ code:hover {
     display: block;
 }
 
-.explanation ul{
+.explanation ul, .hill ul{
     list-style-type: disc;
 }
 
-.explanation h4{
+.explanation h4, #explanation h3{
     padding-bottom: 15px;
 }
 
 .explanation ul li{
     padding-bottom: 10px;
+}
+
+div table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+div table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.math-render{
+    text-align: center;
 }
 
 /* Responsive Design */
