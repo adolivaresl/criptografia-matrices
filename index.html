@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,7 +47,7 @@
             </div>  
         </section>
         <!-- Descripción-contexto-problematica -->
-        <section class="container-fluid slide ">
+        <section class="container-fluid slide">
             <div class="row header-section">
                 <div class="col-3 b-top">
                     <img src="./assets/i_inacap.svg"/>
@@ -93,8 +94,8 @@
                         <div class="question-one">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                <h5 class="card-title">Pregunta 1:</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">¿Cuál fue la necesidad de utilizar esta matemática? (Ventaja y Desventajas)</h6>
+                                    <h5 class="card-title">Pregunta 1:</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">¿Qué elementos hacen más segura una clave?</h6>
                                 </div>
                             </div>
                         </div>
@@ -103,8 +104,9 @@
                         <div class="question-two">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                <h5 class="card-title">Pregunta 2:</h5>
-                                <h6 class="card-subtitle mb-2 text-body-secondary">¿Qué elementos hacen más segura una clave?</h6>
+                                    <h5 class="card-title">Pregunta 2:</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">¿Cuál fue la necesidad de utilizar esta matemática? (Ventaja y Desventajas)</h6>
+                                
                                 </div>
                             </div>
                         </div>
@@ -298,7 +300,7 @@
                             <h4>3. Contexto de Ataque</h4>
                           <p class="card-text"><ul id=seg3>
                             <li>Ataque de texto claro conocido</li>
-                            <li>Ataque de texto claro conocido</li>
+                            <li>Ataque de texto claro elegido</li>
                             <li>Ataque de texto cifrado elegido</li>
                             <li>Ataque de canal lateral</li>
                         </ul></p>
@@ -484,12 +486,274 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!-- <section>8</section>
-        <section>9</section>
-        <section>10</section> -->
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-8 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Comparativa de cifrados</h2>
+                </div>
+             </div>
+            <!-- tabla Comparativa de ventajas y desventajas -->
+             <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Método</th>
+                        <th scope="col">Necesidad de las matemáticas</th>
+                        <th scope="col">Ventajas</th>
+                        <th scope="col">Deventajas</th>
+                        <th scope="col">Se aplica en:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Cifrado Hill</th>
+                        <td>Uso de álgebra lineal y matrices para cifrar bloques.</td>
+                        <td>Cifrado eficiente por bloques, resistencia a análisis de frecuencia.</td>
+                        <td>Requiere claves invertibles, vulnerable a ataques de texto plano conocido.</td>
+                        <td>Cifrado de mensajes cortos, aplicaciones educativas y demostraciones.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RSA</th>
+                        <td>Matemáticas de números primos y factorización para garantizar la seguridad.</td>
+                        <td>Criptografía de clave pública, ampliamente utilizada y segura para comunicación.</td>
+                        <td>Desempeño lento, requiere claves grandes, vulnerable si no se implementa correctamente.</td>
+                        <td>Comunicaciones seguras en internet, firmas digitales, intercambio de claves.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">SHA-256</th>
+                        <td>Funciones hash complejas para garantizar integridad de los datos.</td>
+                        <td>Alta seguridad, no reversible, eficiente para verificar integridad.</td>
+                        <td>No cifra datos, solo verifica integridad.</td>
+                        <td>Verificación de integridad de datos, firmas digitales, blockchain.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+         <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-8 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Introducción a métodos de cifrado</h2>
+                </div>
+             </div>
+             <!-- Introducción Hill -->
+              <div class="row with-highlight y">
+                <div class="col-5 offset-md-3">
+                    <p>La <span>criptografía</span> es una disciplina que busca garantizar la <span>seguridad de la información</span> mediante el uso de técnicas matemáticas avanzadas.</p>
+                    <p>Exploramos cómo las matemáticas constituyen la base de los métodos criptográficos más destacados, como el <span>Cifrado de Hill, RSA y las funciones de hash</span>.</p>
+                    <p>Estos sistemas no solo permiten la <span>encriptación</span> de datos sensibles, sino que también garantizan su <span>integridad</span> y <span>autenticidad</span> en nuestras comunicaciones en línea.</p>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="btn button btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+         </section>
+         <!-- Metodo Cifrado de Hill -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado de Hill</h2>
+                </div>
+            </div>
+            <!-- Introducción al Cifrado de Hill -->
+             <div class="row with-highlight y">
+                <div class="col-5 offset-md-2">
+                    <p>Desarrollado por el matemático y criptógrafo estadounidense <span> S. Hill en 1929</span>.</p>
+                    <p>Fue uno de los primeros sistemas en aplicar <span>álgebra lineal</span> y <span> operaciones matriciales</span> al cifrado de mensajes.</p>
+                    <p>Su enfoque marcó un punto de transición hacia métodos más matemáticos en la criptografía</p>
+                    <p>El trabajo de Lester Hill se publicó en artículos académicos de la época, donde se <span>destacaba su método como un sistema resistente para su tiempo</span>, aunque actualmente se considera <span>inseguro frente a ataques modernos</span>.</p>
+                </div>
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-8 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado de Hill</h2>
+                </div>
+             </div>
+             <!-- Paso a paso cifrado Hill -->
+              <div class="row">
+                <!-- Columna del código -->                
+                <div class="col-5 offset-md-1 code-section">
+                    <div class="code-line" data-target="explanation6">
+                        <h4>1. Preprar el mensaje y clave</h4>
+                        <p><span>Mensaje por cifrar</span>: "HI"</p>
+                        <p><span>Clave</span>:</p>
+                        <p class="math-render">Matriz \( K = \begin{pmatrix} 3 & 3 \\ 2 & 5 \end{pmatrix} \)</p>
+                        <p><span>Asignación de valor al alfabeto</span>:</p>
+                        <table>
+                            <tr>
+                                <td>A=0</td>
+                                <td>B=1</td>
+                                <td>C=2</td>
+                                <td>D=3</td>
+                                <td>E=4</td>
+                            </tr>
+                            <tr>
+                                <td>F=5</td>
+                                <td>G=6</td>
+                                <td>H=7</td>
+                                <td>I=8</td>
+                                <td>J=9</td>
+                            </tr>
+                            <tr>
+                                <td>K=10</td>
+                                <td>L=11</td>
+                                <td>M=12</td>
+                                <td>N=13</td>
+                                <td>O=14</td>
+                            </tr>
+                            <tr>
+                                <td>P=15</td>
+                                <td>Q=16</td>
+                                <td>R=17</td>
+                                <td>S=18</td>
+                                <td>T=19</td>
+                            </tr>
+                            <tr>
+                                <td>U=20</td>
+                                <td>V=21</td>
+                                <td>W=22</td>
+                                <td>X=23</td>
+                                <td>Y=24</td>
+                            </tr>
+                            <tr>
+                                <td>Z=25</td>
+                            </tr>
+                        </table>
+                        <p><span>Reemplazo por números</span>:"H"=7 , "I"=8</p>
+                        <p><span>Representación del mensaje</span>:</p>
+                        <p class="math-render">\( P = \begin{pmatrix} 7 \\ 8 \end{pmatrix} \)</p>
+                    </div>
+                    <div class="code-line" data-target="explanation7">
+                        <h4>2. Cifrar el mensaje</h4>
+                        <p><span>Fórmula para cifrar</span>: C=K*P mod 26</p>
+                        <p><span>Multiplicar</span>:</p>
+                        <p class="math-render">
+                            \[
+                            C = \begin{pmatrix} 3 & 3 \\ 2 & 5 \end{pmatrix} \cdot \begin{pmatrix} 7 \\ 8 \end{pmatrix} = \begin{pmatrix} 45 \\ 54 \end{pmatrix}
+                            \]
+                        </p>
+                        <p><span>Aplicación mod 26</span>:</p>
+                        <p class="math-render">
+                            \[
+                            C = \begin{pmatrix} 45 \mod 26 \\ 54 \mod 26 \end{pmatrix} = \begin{pmatrix} 19 \\ 2 \end{pmatrix}
+                            \]
+                        </p>
+                        <p><span>Texto cifrado</span>: 19="T", 2="C"</p>
+                        <p><span>Resultado cifrado</span>: "TC"</p>
+                    </div>
+                    <div class="code-line" data-target="explanation8"><h4>3. Decifrar el mensaje</h4>
+                    <p><span>Cálculo matriz inversa de K en modulo 26</span></p>
+                    <p><span>Determinante de K</span>: det(K)=(3*5-3*2) = 9</p>
+                    <p><span>Inverso del det(K) mod 26</span>: 9<sup>-1</sup>= 3 en módulo 26</p>
+                    <p><span>Matriz inversa de K</span>:</p>
+                    <p class="math-render">
+                        \[
+                        K^{-1} = 3 \cdot \begin{pmatrix} 5 & -3 \\ -2 & 3 \end{pmatrix} \mod 26 = \begin{pmatrix} 15 & 17 \\ 20 & 9 \end{pmatrix}
+                        \]
+                    </p>
+                    <p><span>Aplicamos el decifrado</span>:</p>
+                    <p class="math-render">
+                        \[
+                        P = K^{-1} \cdot C \mod 26 = \begin{pmatrix} 15 & 17 \\ 20 & 9 \end{pmatrix} \cdot \begin{pmatrix} 19 \\ 2 \end{pmatrix} \mod 26 = \begin{pmatrix} 7 \\ 8 \end{pmatrix}
+                        \]
+                    </p>
+                    <p><span>Mensaje descifrado</span>: "HI"</p>
+                    </div>
+                </div>
+                <!-- columna de explicacion cifrado de hill -->
+                <div class="col-4 offset-md-1">
+                    <div id="explanation">
+                        <h3>Cifrado de Hill con una matriz 2x2</h3>
+                        <div id="explanation6" class="explanation">
+                            <ul>
+                                <li>Primero dividimos el mensaje en bloques del mismo tamaño que la matriz clave.</li>
+                                <li>Cada letra del alfabeto se reemplaza por su posición numérica (por ejemplo: A=0, B=1, C= 2,..., Z=25).</li>
+                                <li>Se elije una matriz cuadrada nxn con números enteros como clave. Esta matriz debe ser invertible en módulo 26 (es decir, tener un determinante que no sea multiplo de 2 o 13 para asegurar que exista una matriz inversa).</li>
+                                <li>El mensaje se representa como el vector columna.</li>
+                            </ul>
+                        </div>
+                        <div id="explanation7" class="explanation">
+                            <ul>
+                                <li>Utilizamos la formula para cifrar. Comenzamos multiplicando K * P</li>
+                                <li>Luego reducimos con módulo 26.</li>
+                                <li>Obtenemos dos numeros que al reemplazarlos por las letras de nuestra tabla nos retorna 19= "T" y 2 = "C"</li>
+                            </ul>
+                        </div>
+                        <div id="explanation8" class="explanation">
+                            <ul>
+                                <li>Utilizamos la matriz inversa de la clave para recuperar el mensaje original.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-8 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado de Hill</h2>
+                </div>
+             </div>
+             <!-- ventajas y desventajas de Cifrado de Hill -->
+              <div class="row with-highlight y hill">
+                <div class="col-4 offset-md-1">
+                    <h4>Ventajas</h4>
+                    <ul>
+                        <li><span>Fácil de implementar matemáticamente</span> con matrices pequeñas.</li>
+                        <li><span>Resistente a análisis de frecuencia</span>, ya que cifra por bloques en lugar de letras individuales.</li>
+                        <li><span>Generalización</span>: permite cifrar bloques más grandes con matrices de mayor tamaño.</li>
+                    </ul>
+                </div>
+                <div class="col-4 offset-md-1">
+                    <h4>Desventajas</h4>
+                    <ul>
+                        <li><span>Dependencia de la matriz clave</span>: Si la matriz no es invertible en módulo 26 el módulo no funciona.</li>
+                        <li><span>Vulnerabilidad a ataques</span>: Si un atacante conoce varios pares de texto plano y cifrado, puede deducir la matriz clave mediante álgebra lineal.</li>
+                        <li><span>Complejidad creciente</span>: Para matrices grandes los cálculos manuales son complicados y propensos a errores.</li>
+                    </ul>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!--<section>10</section> -->
     </div>
     <script src="moving_slide.js"></script>
     <script src="bruteForce.js"></script>
-
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
 </body>
 </html>
