@@ -122,7 +122,7 @@
         <!-- linea de tiempo -->
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-10 b-top">
+                <div class="col-7 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Historia Matemática y Evolución de la Criptografía</h2>
                 </div>
@@ -249,7 +249,7 @@
         <!-- Evaluacion claves seguras -->
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-6 b-top">
+                <div class="col-5 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Evaluación de Claves Seguras</h2>
                 </div>
@@ -318,7 +318,7 @@
         <!-- Ataque fuerza bruta -->
         <section class="slide container-fluid">
              <div class="row header-section">
-                <div class="col-8 b-top">
+                <div class="col-5 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Simulación Ataque Fuerza Bruta</h2>
                 </div>
@@ -350,10 +350,10 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!-- Explicación del algoritmo -->
+        <!-- Explicación del algoritmo Fuerza bruta-->
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-4 b-top">
+                <div class="col-3 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>¿Cómo funciona?</h2>
                 </div>
@@ -486,9 +486,10 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
+        <!-- Comparativa de ventajas y desventajas -->
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-8 b-top">
+                <div class="col-4 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Comparativa de cifrados</h2>
                 </div>
@@ -498,7 +499,7 @@
                 <table class="table table-bordered">
                     <thead>
                       <tr>
-                        <th scope="col">Método</th>
+                        <th scope="col-3">Método</th>
                         <th scope="col">Necesidad de las matemáticas</th>
                         <th scope="col">Ventajas</th>
                         <th scope="col">Deventajas</th>
@@ -537,16 +538,17 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
+        <!-- Introducción a los métodos de cifrado -->
          <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-8 b-top">
+                <div class="col-5 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Introducción a métodos de cifrado</h2>
                 </div>
              </div>
-             <!-- Introducción Hill -->
+             <!-- métodos de cifrado -->
               <div class="row with-highlight y">
-                <div class="col-5 offset-md-3">
+                <div class="col-6 offset-md-4">
                     <p>La <span>criptografía</span> es una disciplina que busca garantizar la <span>seguridad de la información</span> mediante el uso de técnicas matemáticas avanzadas.</p>
                     <p>Exploramos cómo las matemáticas constituyen la base de los métodos criptográficos más destacados, como el <span>Cifrado de Hill, RSA y las funciones de hash</span>.</p>
                     <p>Estos sistemas no solo permiten la <span>encriptación</span> de datos sensibles, sino que también garantizan su <span>integridad</span> y <span>autenticidad</span> en nuestras comunicaciones en línea.</p>
@@ -569,7 +571,7 @@
             </div>
             <!-- Introducción al Cifrado de Hill -->
              <div class="row with-highlight y">
-                <div class="col-5 offset-md-2">
+                <div class="col-6 offset-md-4">
                     <p>Desarrollado por el matemático y criptógrafo estadounidense <span> S. Hill en 1929</span>.</p>
                     <p>Fue uno de los primeros sistemas en aplicar <span>álgebra lineal</span> y <span> operaciones matriciales</span> al cifrado de mensajes.</p>
                     <p>Su enfoque marcó un punto de transición hacia métodos más matemáticos en la criptografía</p>
@@ -585,7 +587,7 @@
         </section>
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-8 b-top">
+                <div class="col-4 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Método de Cifrado de Hill</h2>
                 </div>
@@ -594,7 +596,7 @@
               <div class="row">
                 <!-- Columna del código -->                
                 <div class="col-5 offset-md-1 code-section">
-                    <div class="code-line" data-target="explanation6">
+                    <div class="code-line whithout-pre" data-target="explanation6">
                         <h4>1. Preprar el mensaje y clave</h4>
                         <p><span>Mensaje por cifrar</span>: "HI"</p>
                         <p><span>Clave</span>:</p>
@@ -644,7 +646,7 @@
                         <p><span>Representación del mensaje</span>:</p>
                         <p class="math-render">\( P = \begin{pmatrix} 7 \\ 8 \end{pmatrix} \)</p>
                     </div>
-                    <div class="code-line" data-target="explanation7">
+                    <div class="code-line whithout-pre" data-target="explanation7">
                         <h4>2. Cifrar el mensaje</h4>
                         <p><span>Fórmula para cifrar</span>: C=K*P mod 26</p>
                         <p><span>Multiplicar</span>:</p>
@@ -662,7 +664,7 @@
                         <p><span>Texto cifrado</span>: 19="T", 2="C"</p>
                         <p><span>Resultado cifrado</span>: "TC"</p>
                     </div>
-                    <div class="code-line" data-target="explanation8"><h4>3. Decifrar el mensaje</h4>
+                    <div class="code-line whithout-pre" data-target="explanation8"><h4>3. Decifrar el mensaje</h4>
                     <p><span>Cálculo matriz inversa de K en modulo 26</span></p>
                     <p><span>Determinante de K</span>: det(K)=(3*5-3*2) = 9</p>
                     <p><span>Inverso del det(K) mod 26</span>: 9<sup>-1</sup>= 3 en módulo 26</p>
@@ -715,9 +717,10 @@
                 <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
+        <!-- ventajas y desventajas cifrado de Hill -->
         <section class="slide container-fluid">
             <div class="row header-section">
-                <div class="col-8 b-top">
+                <div class="col-4 b-top">
                     <img src="./assets/i_inacap.svg"/>
                     <h2>Método de Cifrado de Hill</h2>
                 </div>
@@ -748,7 +751,386 @@
                 <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!--<section>10</section> -->
+        <!-- Cifrado RSA -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado RSA</h2>
+                </div>
+            </div>
+            <!-- Introducción al RSA -->
+             <div class="row with-highlight y">
+                <div class="col-6 offset-md-4">
+                    <p>El método RSA fue desarrollado en 1977 por <span>Ron Rivest, Adi Shamir y Leonard Adleman</span>, tres criptógrafos del Instituto Tecnológico de Massachusetts (MIT). </p>
+                    <p>Su apellido forma el acrónimo <span>RSA</span></p>
+                    <p>Fue uno de los primeros sistemas prácticos de <span>cifrado asimétrico, donde se utilizan un par de claves</span>.</p>
+                    <p>Este método sigue siendo una de las piedras angulares en sistemas modernos de seguridad digital.</p>
+                </div>
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Ejemplo algoritmo RSA -->
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado RSA</h2>
+                </div>
+             </div>
+             <!-- Paso a paso cifrado Hill -->
+              <div class="row">
+                <!-- Columna del código -->                
+                <div class="col-5 offset-md-1 code-section">
+                    <div class="code-line whithout-pre" data-target="explanation9">
+                        <h5>Elección de primos</h5>
+                        <p> <span>p=</span>7, <span>q=</span>11</p>
+                        <p><span>n=</span>7*11 = 77, <span>ϕ(n)=</span>(7-1)*(11-1)=60</p>
+                        <h5>Elección de <em>e</em></h5>
+                        <p>Elegimos <span>e=</span>17 (comprimo con <span>ϕ(n)=</span>60) </p>
+                        <h5>Cálculo de <em>d</em></h5>
+                        <p><em>d</em> es el inverso modular de 17mod60, lo que da <span>d=</span>53</p>
+                        <h5>Clave pública y privada</h5>
+                        <p>Clave pública: (17,77)</p>
+                        <p>Clave privada: (53, 77)</p>
+                    </div>
+                    <div class="code-line whithout-pre" data-target="explanation10">
+                        <h5>Cifrado</h5>
+                        <p>Mensaje <span>M=</span>10</p>
+                        <p>
+                            $$C = 10^{17} \mod 77 = 17 \, \text{(resultado simplificado)}.$$
+                        </p>
+                    </div>
+                    <div class="code-line whithout-pre" data-target="explanation11">
+                        <h5>Descifrado</h5>
+                        <p>
+                            $$M = 17^{53} \mod 77 = 10 \, \text{(mensaje original)}.$$
+                        </p>
+                    </div>
+                </div>
+                <!-- columna de explicacion cifrado de hill -->
+                <div class="col-4 offset-md-1">
+                    <div id="explanation">
+                        <h3>Pasos del cifrado RSA</h3>
+                        <div id="explanation9" class="explanation">
+                            <h4>1. Generación de claves</h4>
+                            <ul>
+                                <li>Elegimos números primos grandes, <em>p</em> y <em>q</em></li>
+                                <li>Calculamos <span>n=</span> p*q. Este valor será parte de ambas claves.</li>
+                                <li>Calculamos <span>ϕ(n)=</span> (p-1)*(q-1), la función de Euler.</li>
+                                <li>Seleccionamos un número <em>e</em> tal que <span>1 ><em> e </em> < ϕ(n) </span> y que sea coprimo con <span>ϕ(n)</span></li>
+                                <li>Calculamos en inverso modular de <em>e</em>, denominado <em>d</em>, tal que: (e*d)modϕ(n)=1</li>
+                                <li><span>Claves generadas:</span>
+                                    <p>Clave pública: (e, n)</p>
+                                    <p>Clave privada: (d, n)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="explanation10" class="explanation">
+                            <h4>2. Cifrado</h4>
+                            <ul>
+                                <li>Para un mensaje <span>M</span> (convertido a un número), se cifra como:</li>
+                                <p>
+                                    $$C = M^e \mod n$$
+                                </p>
+                            </ul>
+                        </div>
+                        <div id="explanation11" class="explanation">
+                            <h4>3. Descifrado</h4>
+                            <ul>
+                                <li>El receptor usa la clave privada para obtener el mensaje original:</li>
+                                <p>
+                                    \( M = C^d \mod n \)
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- ventajas y desventajas RSA -->
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado RSA</h2>
+                </div>
+             </div>
+             <!-- ventajas y desventajas de Cifrado de Hill -->
+              <div class="row with-highlight y hill">
+                <div class="col-4 offset-md-1">
+                    <h4>Ventajas</h4>
+                    <ul>
+                        <li><span>Seguridad sólida</span> basada en la dificultad de factorizar números grandes.</li>
+                        <li><span>No se requiere compartir la clave privada</span>, lo que simplifica la comunidad segura.</li>
+                    </ul>
+                </div>
+                <div class="col-4 offset-md-1">
+                    <h4>Desventajas</h4>
+                    <ul>
+                        <li><span>Ineficiencia</span> para mensajes grandes debido a cálculos complejos.</li>
+                        <li><span>Claves largas</span> necesarias para mantener seguridad (2048 bits o más).</li>
+                        <li><span>Amenaza cuántica</span>: algoritmos cuánticos pueden romper RSA en el futuro.</li>
+                    </ul>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Introducción al Método hash -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-5 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de Cifrado de Funciones Hash</h2>
+                </div>
+            </div>
+            <!-- HASH -->
+             <div class="row with-highlight y">
+                <div class="col-6 offset-md-3">
+                    <p>Estas funciones transforman datos de entrada de cualquier tamaño en una <span>cadena de texto de longitud fija</span>, conocida como <span>valor hash</span> o <span>digest</span>.</p> 
+                    <p>Este proceso es <span>unidireccional</span>.</p>
+                    <p>Las funciones hash son ampliamente utilizadas para <span>verificar la integridad de los datos</span> y en la <span>creación de firmas digitales</span>.</p>
+                </div>
+                <div class="col-5 offset-md-5 hash">
+                    <h5>Historia y Desarrollo</h5>
+                    <ul>
+                        <li>Algunas de las primeras funciones hash, como MD4 y MD5, fueron desarrolladas en la década de 1990.</li>
+                        <li>Con el avance de la tecnología y el aumento de las amenazas cibernéticas, estas funciones se han vuelto vulnerables a ataques de colisión</li>
+                        <li>Esto ha llevado al desarrollo de funciones hash más seguras, como SHA-256 y SHA-3.</li>
+                    </ul>
+                </div>
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Pasos del Proceso de Hashing -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-5 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Pasos del Proceso de Hashing</h2>
+                </div>
+            </div>
+            <!-- Paso a paso -->
+             <div class="row with-highlight y">
+                <div class="col-6 offset-md-3">
+                    <ol class="step-by-step">
+                        <li><span>Preparar el mensaje:</span></li>
+                        <p>El mensaje de entrada puede ser de cualquier tamaño y tipo (texto, archivo, etc.).</p>
+                        <ul>
+                            <li>Mensaje por hashear: "Hello, World!"</li>
+                            <li>Función hash: SHA-256</li>
+                            <li>El mensaje "Hello, World!" se utiliza como entrada.</li>
+                        </ul>
+                        <li><span>Aplicar la función hash:</span></li>
+                        <p>Utilizar una función hash criptográfica para transformar el mensaje en un valor hash de longitud fija.</p>
+                        <ul>
+                            <li>Utilizamos SHA-256 para generar el valor hash:</li>
+                            <p>SHA-256("Hello, World!") = a591a6d40bf420404a011733cfb7b190d62c65bf0bc...</p>
+                        </ul>
+                        <li><span>Verificación de integridad:</span></li>
+                        <p>Comparar el valor hash generado con un valor hash previamente calculado para verificar si el mensaje ha sido alterado.</p>
+                        <ul>
+                            <li>Si el valor hash generado coincide con un valor hash previamente calculado, el mensaje no ha sido alterado.</li>
+                        </ul>
+                    </ol>
+                </div>
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- ventajas y desventajas de Hash -->
+        <section class="slide container-fluid">
+            <div class="row header-section">
+                <div class="col-5 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Método de las Funciones Hash</h2>
+                </div>
+             </div>
+             <!-- ventajas y desventajas de las Funciones Hash -->
+              <div class="row with-highlight y hill">
+                <div class="col-4 offset-md-1">
+                    <h4>Ventajas</h4>
+                    <ul>
+                        <li><span>Alta seguridad</span>: Las funciones hash criptográficas modernas son altamente seguras y resistentes a ataques.</li>
+                        <li><span>Eficiencia</span>: El proceso de hashing es rápido y eficiente, lo que lo hace ideal para verificar la integridad de grandes volúmenes de datos.</li>
+                        <li><span>No reversible</span>: No es posible revertir el valor hash para obtener el dato original, lo que añade una capa adicional de seguridad.</li>
+                    </ul>
+                </div>
+                <div class="col-4 offset-md-1">
+                    <h4>Desventajas</h4>
+                    <ul>
+                        <li><span>No cifran datos</span>: Las funciones hash no están diseñadas para cifrar datos, solo para verificar su integridad.</li>
+                        <li><span>Vulnerabilidad a ataques de colisión</span>: Algunas funciones hash más antiguas son vulnerables a ataques de colisión, donde dos entradas diferentes producen el mismo valor hash.</li>
+                    </ul>
+                </div>
+              </div>
+            <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- tipo de funciones Hash -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-4 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Tipos de Funciones Hash</h2>
+                </div>
+            </div>
+            <!-- Paso a paso -->
+             <div class="row with-highlight y">
+                <div class="col-4 offset-md-1">
+                    <ul class="step-by-step">
+                        <li>1. <span>MD4 y MD5:</span></li>
+                        <p>Desarrolladas por Ronald Rivest, estas funciones fueron ampliamente utilizadas en el pasado. Sin embargo, hoy en día se consideran inseguras debido a vulnerabilidades a ataques de colisión.</p>
+                        <li>2. <span>SHA-1:</span></li>
+                        <p>Desarrollada por la Agencia de Seguridad Nacional de EE.UU. (NSA), SHA-1 es más segura que MD4 y MD5, pero también se considera vulnerable a ataques de colisión.</p>
+                        <li>3. <span>SHA-2 (SHA-256, SHA-384, SHA-512):</span></li>
+                        <p>La familia SHA-2 es una mejora significativa sobre SHA-1 y es ampliamente utilizada en aplicaciones de seguridad modernas. SHA-256 es una de las funciones hash más comunes en esta familia.</p>
+                       
+                    </ul>
+                </div>
+                <div class="col-4 offset-md-1">
+                    <ul>
+                        <li>4. <span>SHA-3:</span></li>
+                        <p>Desarrollada por el Instituto Nacional de Estándares y Tecnología de EE.UU. (NIST), SHA-3 es la última generación de funciones hash y está diseñada para ser resistente a ataques de colisión y otros tipos de ataques criptográficos.
+                        </p>
+                        <li>5. <span>BCrypt:</span></li>
+                        <p>Utilizada principalmente para el hashing de contraseñas, BCrypt incluye una "sal" para proteger contra ataques de tablas arcoíris y es diseñada para ser lenta, lo que dificulta los ataques de fuerza bruta.</p>
+                        <li>6. <span>Scrypt:</span></li>
+                        <p>Similar a BCrypt, Scrypt también es utilizada para el hashing de contraseñas y está diseñada para ser costosa en términos de memoria, lo que la hace resistente a ataques de hardware personalizado.</p>
+                    </ul>
+                </div>
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Reflexiones -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-3 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Reflexiones</h2>
+                </div>
+            </div>
+             <div class="row with-highlight y refletions">
+                <div class="col-3">
+                    <h2>_1</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Explorar la historia de las matemáticas y la criptografía me permitió entender cómo principios como la teoría de números y el álgebra lineal fueron clave para sistemas como RSA y el cifrado de Hill. También comprendí la importancia de las matemáticas en la seguridad digital, destacando su relevancia en la tecnología actual.</p>
+                        <cite title="Source Title">_Daniela</cite>
+                    </blockquote>
+                </div>
+                <div class="col-3">
+                    <h2>_2</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Investigar métodos de cifrado como Hill, RSA y hash me permitió comprender las matemáticas que los respaldan y su relevancia en la criptografía moderna. El cifrado de Hill muestra el uso del álgebra lineal, RSA resalta la factorización de números primos y los métodos de hashing demuestran la importancia del pensamiento matemático. Este proyecto me enseñó sobre algoritmos y la necesidad de diseñar sistemas resistentes a ataques, enfatizando el papel crucial de la entropía.</p>
+                        <cite title="Source Title">_Patricio</cite>
+                    </blockquote>
+                </div>  
+                <div class="col-3">
+                    <h2>_3</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Trabajar en la cuantificación de la seguridad de claves y diseñar un algoritmo para evaluar la entropía y realizar ataques de fuerza bruta me permitió ver cómo la teoría matemática impacta directamente en la protección de información. Crear el algoritmo me mostró la aplicación práctica de principios matemáticos en la seguridad de claves y entendí la importancia de diseñar sistemas robustos. Este proyecto reforzó mi admiración por la relación entre matemáticas y tecnología.</p>
+                        <cite title="Source Title">_América</cite>
+                    </blockquote>
+                </div>            
+             </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Conclusiones -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-3 b-top">
+                    <img src="./assets/i_inacap.svg"/>
+                    <h2>Conclusiones</h2>
+                </div>
+            </div>
+            <div class="row with-highlight y refletions">
+                <div class="col-6 offset-md-2">
+                    <ol>
+                        <li>La importancia de las matemáticas en la criptografía</li>
+                        <li>Conexión entre teoría y aplicación</li>
+                        <li>La relevancia de la entropía</li>
+                        <li>La seguridad no es solo cuestión de complejidad</li>
+                        <li>Los avances del pasado son esenciales para la criptografía moderna</li>
+                        <li>La fuerza bruta sigue siendo una amenaza</li>
+                        <li>El diseño de sistemas criptográficos requiere de una visión multidisciplinaria</li>
+                        <li>La seguridad digital es esencial en la era moderna</li>
+                        <li>La matemática como herramienta de defensa cibernética</li>
+                        <li>La evaluación de la seguridad requiere pruebas continuas</li>
+                    </ol>
+                </div>                
+            </div>
+             <div class="row buttons-section">
+                <div class="col-3 offset-sm-3">
+                <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+                <div class="col-3 offset-sm-2">
+                <button class="button btn btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
+            </div>
+        </section>
+        <!-- Fin -->
+        <section class="container-fluid slide">
+            <div class="row header-section">
+                <div class="col-sm-10 col-md-4 b-top">
+                    <img src="./assets/inacap.svg" alt="Logotipo Inacap">
+                </div>
+            </div>
+                <div class="row" >
+                <div class="col-sm-6 offset-sm-4 col-md-6">
+                    <h1><strong>_</strong>Criptografía y Matemáticas:</h1>
+                    <h2>La evolución y <stong style="color:#ffb000">aplicación de matrices</stong> en la seguridad de la información</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 offset-md-7 offset-sm-6">
+                    <blockquote>
+                        "La criptografía es el arte de proteger las comunicaciones y la información mediante el uso de códigos, y las matemáticas son el lenguaje que permite que este arte sea posible."
+                            <cite><em>— Whitfield Diffie</em>, pionero en la criptografía moderna.</cite>
+                    </blockquote>     
+                </div>
+            </div>  
+            <div class="row buttons-section">
+                <div class="col-4 offset-md-6">
+                    <button class="button btn btn-outline-primary" onclick="previousSlide()">Atrás</button></div>
+            </div>  
+        </section>
     </div>
     <script src="moving_slide.js"></script>
     <script src="bruteForce.js"></script>

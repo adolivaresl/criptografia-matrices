@@ -43,7 +43,7 @@ ul{
     padding-left: 0;
     font-size: 0.8rem;
 }
-#seg1, #seg2, #seg3{
+#seg1, #seg2, #seg3, .hash ul, .step-by-step ul{
     list-style:disc;
     padding-left: 20px    
 }
@@ -282,13 +282,13 @@ ul{
     padding: 10px;
 
 }
-.code-section pre {
+.code-section pre, .whithout-pre {
     white-space: pre-line;
     word-break: break-all; 
     margin: 0;
     padding: 0;
 }
-code:hover {
+code:hover, .whithout-pre:hover {
     background-color: #f0f0f0;
     /* color: var(--yellow);
     background-color: var(--primary); */
@@ -320,16 +320,42 @@ div table {
     width: 50%;
     margin: 20px auto;
 }
-div table td {
-    border: 1px solid #333;
+.table thead th{
+    font-size: 0.9rem;
+}
+.table tbody td, .table tbody th{
+    font-size: 0.7rem;
+}
+.table td {
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .math-render{
     text-align: center;
 }
 
+.hash{
+    border-left: 5px solid var(--primary);
+    padding-left: 10px;
+}
+
+.step-by-step ul{
+    padding-bottom: 10px;
+}
+
+.blockquote{
+    font-size: 0.8rem;
+}
+cite{
+    color: var(--yellow);
+}
+.refletions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .text-context {
