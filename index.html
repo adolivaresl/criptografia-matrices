@@ -430,7 +430,7 @@
                             <ul>
                                 <li><span>La variable N</span> guarda el número <span>total de caracteres posibles</span> que se pueden usar, en este caso evalúa el largo de la variable characters por lo tanto son 90 carácteres.</li>
                                 <li><span>La variable L</span> corresponde a longitud de la contraseñan que ingresó el usuario</li>
-                                <li>En la <span>variable possibleCombinations</span>utilizamos el método <span>Math.pow(N,L)</span> que calcula el número total de combinaciones posibles, en este caso si N=90 y L=4, entonces 90<sup>4</sup> = 65610000 combinaciones
+                                <li>En la <span>variable possibleCombinations</span> utilizamos el método <span>Math.pow(N,L)</span> que calcula el número total de combinaciones posibles, en este caso si N=90 y L=4, entonces 90<sup>4</sup> = 65.610.000 combinaciones
                                 </li>
                                 <li>Luego tenemos definida la <span>variable entropy</span> guarda el valor en bits. Como vemos al método <span>Math.log2(65610000)</span> le pasamos como parámetro el número total de combinaciones que obtuvimos de la variable possibleCombinations, convirtiendo esto en <span>bits de entropía</span> lo que daría 25.96bits</li>
                                 <li>La función <span>log2(x)</span> lo que hace es calcular cuántos bits (símbolos binarios 0 y 1) necesitas para representar todas las combinaciones.
@@ -486,8 +486,6 @@
                 <button class="btn button btn-outline-primary" onclick="nextSlide()">Siguiente</button></div>
             </div>
         </section>
-        <!-- Comparativa de ventajas y desventajas -->
-        <!--  -->
         <!-- Introducción a los métodos de cifrado -->
          <section class="slide container-fluid">
             <div class="row header-section">
